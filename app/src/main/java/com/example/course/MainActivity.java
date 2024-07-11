@@ -24,19 +24,24 @@ public class MainActivity extends AppCompatActivity {
     public void onClickGuest(View view){
         Intent i = new Intent(MainActivity.this, SignupPage.class);
         startActivity(i);
-    }    public void onClickLogin(View view) throws ParseException {
-        Intent i = new Intent(MainActivity.this, SignupPage.class);
+    }
 
-        DatabaseHandler dbHandler = new DatabaseHandler(this);
+    public void onClickLogin(View view) throws ParseException {
+        Intent i = new Intent(MainActivity.this, UserProfile.class);
 
+//        DatabaseHandler dbHandler = new DatabaseHandler(this);
+//
         EditText userName = (EditText) findViewById(R.id.editTextText);
         EditText password = (EditText) findViewById(R.id.editTextText2);
-        User matchedUser = dbHandler.getUser(userName.toString());
+//        User matchedUser = dbHandler.getUser(userName.toString());
 
-        if(matchedUser.getPassword() == password.toString()) {
+        if(password.toString()=="") {
             startActivity(i);
-        } else {
-            // Throw error message
+        } else if (password.toString()=="admin") {
+
+        }
+        else  {
+//            // Throw error message
         }
 
 
