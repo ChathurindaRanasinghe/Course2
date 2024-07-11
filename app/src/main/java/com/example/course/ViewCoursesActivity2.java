@@ -57,5 +57,4 @@ public class ViewCoursesActivity2 extends AppCompatActivity {
             }
         }
     }
-
 }

@@ -46,10 +46,6 @@ public class MainActivity extends AppCompatActivity {
 //        else  {
 ////            // Throw error message
 //        }
-//}
 
-//    public void onClickSignup(View view){
-//        Intent intent = new Intent(this, SignupPage.class); // Assuming SignupPage is the new activity for signup
-//        startActivity(intent);
-//    }
+
 }

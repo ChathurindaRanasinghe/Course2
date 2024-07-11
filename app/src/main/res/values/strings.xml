@@ -5,4 +5,11 @@
         <item>Female</item>
         <item>Other</item>
     </string-array>
+    <string-array name="course_array">
+        <item>Colombo</item>
+        <item>Jaffna</item>
+        <item>Galle</item>
+        <item>Gampaha</item>
+        <item>Kottawa</item>
+    </string-array>
 </resources>
